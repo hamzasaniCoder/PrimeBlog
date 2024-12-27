@@ -1,0 +1,8 @@
+react hook form
+redux.js
+redux toolkit 
+react router dom 
+appwrite
+tinymce react
+html react parser
+npm i @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form
