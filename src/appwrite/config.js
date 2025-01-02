@@ -16,7 +16,7 @@ export class Service {
         this.bucket = new Storage(this.client);
     }
     //Create Post Method
-    async createPost({title,slug,content,featuredimage,status,userId}){
+    async createPost({title,slug,content,featuredImage,status,userId}){
         try {
             return await this.databases.createDocument(
                 conf.appwriteDatabaseId,
@@ -25,7 +25,7 @@ export class Service {
                 {
                     title,
                     content,
-                    featuredimage,
+                    featuredImage,
                     status,
                     userId,
                 }
@@ -35,7 +35,7 @@ export class Service {
         }
     }
     //Update Post Method
-    async updatePost(slug,{title,content,featuredimage,status}){
+    async updatePost(slug,{title,content,featuredImage,status}){
         try {
             return await this.databases.updateDocument(
                 conf.appwriteDatabaseId,
@@ -44,7 +44,7 @@ export class Service {
                 {
                     title,
                     content,
-                    featuredimage,
+                    featuredImage,
                     status,
                 }
             )
@@ -137,6 +137,6 @@ export class Service {
 
 const service = new Service()
 
-export default sercice
+export default service
 
 // write a program to run hellowrld

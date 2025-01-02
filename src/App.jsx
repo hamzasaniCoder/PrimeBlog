@@ -20,11 +20,15 @@ function App() {
           dispatch(logout())
       }
     })
-    .finally()
+    .finally(()=>setLoading(false))
   }, [])
   
   return !loading ? (
-      <div></div>
+      <div className=''>
+        <div className=''>
+
+        </div>
+      </div>
   ) : null;
 
 }
